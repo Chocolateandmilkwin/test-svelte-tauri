@@ -24,5 +24,13 @@
     "typescript": "^4.6.4",
     "vite": "^3.0.2",
     "@tauri-apps/cli": "^1.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chocolateandmilkwin/test-svelte-tauri.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chocolateandmilkwin/test-svelte-tauri/issues"
+  },
+  "homepage": "https://github.com/Chocolateandmilkwin/test-svelte-tauri#readme"
 }
