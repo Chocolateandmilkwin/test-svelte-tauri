@@ -4,16 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "tauri": "tauri"
+    "devWeb": "vite",
+    "devApp": "tauri dev",
+    "build": "vite build & vite build --mode single & tauri build",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
-    "@tauri-apps/cli": "^1.1.0",
     "@tauri-apps/api": "^1.2.0",
+    "@tauri-apps/cli": "^1.1.0",
     "@tsconfig/svelte": "^3.0.0",
     "@types/node": "^18.7.10",
     "svelte": "^3.49.0",
@@ -21,7 +20,8 @@
     "svelte-preprocess": "^4.10.7",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
-    "vite": "^3.0.2"
+    "vite": "^3.0.2",
+    "vite-plugin-singlefile": "^0.13.1"
   },
   "repository": {
     "type": "git",
