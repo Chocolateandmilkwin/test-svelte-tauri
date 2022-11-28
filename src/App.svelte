@@ -1,31 +1,32 @@
 <script lang="ts">
-  import Greet from './lib/Greet.svelte'
+  import Greet from "./lib/Greet.svelte";
+
+  let test: string = "more";
+  setTimeout(() => {
+    test = "fuck you";
+  }, 2000);
 </script>
 
 <main class="container">
-  <h1>Welcome to Tauri!</h1>
+  <h1>Welcome to Taursi!</h1>
 
   <div class="row">
-    <a href="https://vitejs.dev" target="_blank">
+    <a href="https://vitejs.dev">
       <img src="/vite.svg" class="logo vite" alt="Vite Logo" />
     </a>
-    <a href="https://tauri.app" target="_blank">
+    <a href="https://tauri.app">
       <img src="/tauri.svg" class="logo tauri" alt="Tauri Logo" />
     </a>
-    <a href="https://svelte.dev" target="_blank">
+    <a href="https://svelte.dev">
       <img src="/svelte.svg" class="logo svelte" alt="Svelte Logo" />
     </a>
   </div>
 
-  <p>
-    Click on the Tauri, Vite, and Svelte logos to learn more.
-  </p>
+  <p>Click on the Tauri, Vite, and Svelte logos to learn {test}.</p>
 
   <div class="row">
     <Greet />
   </div>
-
-
 </main>
 
 <style>

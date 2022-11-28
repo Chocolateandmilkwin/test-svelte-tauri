@@ -1,8 +1,6 @@
 import "./style.css";
 import App from "./App.svelte";
-
-const app = new App({
-  target: document.getElementById("app"),
-});
-
+let appContainer = document.createElement('div');
+document.body.appendChild(appContainer);
+const app = new App({ target: appContainer, });
 export default app;
